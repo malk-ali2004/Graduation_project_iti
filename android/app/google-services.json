@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "52293952399",
+    "project_id": "final-project-iti-613b3",
+    "storage_bucket": "final-project-iti-613b3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52293952399:android:cd3cd6da528c52727621fa",
+        "android_client_info": {
+          "package_name": "com.example.final_project_iti_malak_ali"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0TnJE1xRiA9oCEDL_ZAPZsnTgFjhrgak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
