@@ -21,7 +21,6 @@ class MainView extends StatefulWidget {
   @override
   State<MainView> createState() => _MainViewState();
 }
-
 class _MainViewState extends State<MainView> {
   int _currentIndex = 0;
   String? userName;

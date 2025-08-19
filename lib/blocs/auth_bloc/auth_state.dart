@@ -16,13 +16,12 @@ class Authenticated extends AuthState {
   @override
   List<Object?> get props => [userEmail, userId];
 }
-
 class Unauthenticated extends AuthState {}
-
 class AuthError extends AuthState {
   final String message;
 
   AuthError(this.message);
+
 
   @override
   List<Object?> get props => [message];

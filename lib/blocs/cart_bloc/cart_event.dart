@@ -92,9 +92,7 @@ class IncreaseQuantity extends CartEvent {
 class DecreaseQuantity extends CartEvent {
   final String userId;
   final Product product;
-
   DecreaseQuantity(this.userId, this.product);
-
   @override
   List<Object?> get props => [userId, product];
 }

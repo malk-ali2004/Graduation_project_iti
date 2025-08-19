@@ -29,7 +29,6 @@ class _SignupViewState extends State<SignupView> {
           );
     }
   }
-
   @override
   Widget build(BuildContext context) {
     return BlocListener<AuthBloc, AuthState>(
@@ -48,7 +47,6 @@ class _SignupViewState extends State<SignupView> {
         }
       },
       child: Scaffold(
-        
         body: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -65,9 +63,7 @@ class _SignupViewState extends State<SignupView> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(24),
                 ),
-                // color: Colors.white.withOpacity(0.95),
                 color: const Color.fromRGBO(255, 255, 255, 0.95),
-
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
                       horizontal: 32, vertical: 40),

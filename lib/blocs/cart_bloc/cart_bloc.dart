@@ -50,14 +50,13 @@ class CartBloc extends Bloc<CartEvent, CartState> {
       await _saveCartToFirestore(event.userId, items);
     });
 
-    // حذف
+
     on<RemoveFromCart>((event, emit) async {
       final items =
           state.items.where((i) => i.product.id != event.product.id).toList();
       emit(state.copyWith(items: items));
       await _saveCartToFirestore(event.userId, items);
     });
-
     
     on<IncreaseQuantity>((event, emit) async {
       final items = List<CartItem>.from(state.items);
@@ -69,7 +68,6 @@ class CartBloc extends Bloc<CartEvent, CartState> {
         await _saveCartToFirestore(event.userId, items);
       }
     });
-
     on<DecreaseQuantity>((event, emit) async {
       final items = List<CartItem>.from(state.items);
       final index = items.indexWhere((i) => i.product.id == event.product.id);
@@ -88,13 +86,10 @@ class CartBloc extends Bloc<CartEvent, CartState> {
 
   Future<void> _saveCartToFirestore(String userId, List<CartItem> items) async {
     final cartRef = firestore.collection("carts").doc(userId).collection("items");
-
- 
     final oldDocs = await cartRef.get();
     for (var doc in oldDocs.docs) {
       await doc.reference.delete();
     }
-
     for (var item in items) {
       await cartRef.doc(item.product.id).set(item.toMap());
     }

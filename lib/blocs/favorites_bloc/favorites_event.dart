@@ -5,7 +5,6 @@ abstract class FavoritesEvent extends Equatable {
   @override
   List<Object> get props => [];
 }
-
 class ToggleFavorite extends FavoritesEvent {
   final Product product;
 

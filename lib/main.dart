@@ -9,8 +9,6 @@ import 'blocs/favorites_bloc/favorites_bloc.dart';
 import 'blocs/cart_bloc/cart_bloc.dart';
 import 'blocs/auth_bloc/auth_event.dart';
 import 'blocs/theme_bloc/theme_state.dart';
-
-
 import 'screens/splash/splash_view.dart';
 
 void main() async {
@@ -20,7 +18,6 @@ void main() async {
   );
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
