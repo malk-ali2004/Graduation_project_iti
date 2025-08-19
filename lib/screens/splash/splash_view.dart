@@ -43,7 +43,7 @@ class _SplashViewState extends State<SplashView> {
       child: const Scaffold(
         backgroundColor: Color(0xFFFFF9C4),
         body: Center(
-          child: CircularProgressIndicator(color: Colors.orange),
+          child: CircularProgressIndicator(color: Color(0xFFFF9800)),
         ),
       ),
     );

@@ -110,7 +110,7 @@ class MainHomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow[100],
+      backgroundColor:  Color.fromARGB(173, 255, 159, 15),
       drawer: Drawer(),
       body: SafeArea(
         child: Padding(
@@ -127,7 +127,7 @@ class MainHomeView extends StatelessWidget {
                     backgroundImage:
                         AssetImage('assets/avatar_placeholder.png'),
                   ),
-                 
+                  // Icon(Icons.menu, size: 30),
                 ],
               ),
               const SizedBox(height: 20),
@@ -249,4 +249,3 @@ class CategoryItem extends StatelessWidget {
     );
   }
 }
-
